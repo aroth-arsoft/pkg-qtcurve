@@ -1,3 +1,9 @@
+qtcurve (1.8.18+git721fcf3-1) vivid; urgency=medium
+
+  * use latest snapshot from git
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Fri, 01 May 2015 10:59:06 +0200
+
 qtcurve (1.8.18-2.1~aroth~ppa3) vivid; urgency=medium
 
   * drop kwin-dev
