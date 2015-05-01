@@ -1,3 +1,21 @@
+qtcurve (1.8.18+git721fcf3-4) vivid; urgency=medium
+
+  * fixed test failure on i386
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Fri, 01 May 2015 13:29:02 +0200
+
+qtcurve (1.8.18+git721fcf3-3) vivid; urgency=medium
+
+  * add more kf5 depends
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Fri, 01 May 2015 13:00:21 +0200
+
+qtcurve (1.8.18+git721fcf3-2) vivid; urgency=medium
+
+  * require extra-cmake-modules
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Fri, 01 May 2015 12:39:11 +0200
+
 qtcurve (1.8.18+git721fcf3-1) vivid; urgency=medium
 
   * use latest snapshot from git

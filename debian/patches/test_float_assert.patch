@@ -1,0 +1,39 @@
+--- a/test/test-color-str.cpp
++++ b/test/test-color-str.cpp
+@@ -22,6 +22,10 @@
+ #include <qtcurve-utils/color.h>
+ #include <assert.h>
+ 
++#define EPSILON 1e-6
++#define float_assert(__value, __should) \
++    assert(fabs((__value) - (__should)) < EPSILON)
++
+ static void
+ test_short()
+ {
+@@ -33,9 +37,9 @@
+             for (int b = 0;b < 16;b++) {
+                 sprintf(origin, "#%01X%01X%01X", r, g, b);
+                 qtcColorFromStr(&color, origin);
+-                assert(color.red == r / 15.0);
+-                assert(color.green == g / 15.0);
+-                assert(color.blue == b / 15.0);
++                float_assert(color.red, r / 15.0);
++                float_assert(color.green, g / 15.0);
++                float_assert(color.blue, b / 15.0);
+                 qtcColorToStr(&color, res);
+                 sprintf(origin, "#%02X%02X%02X", r * 255 / 15, g * 255 / 15,
+                         b * 255 / 15);
+@@ -56,9 +60,9 @@
+             for (int b = 0;b < 256;b++) {
+                 sprintf(origin, "#%02X%02X%02X", r, g, b);
+                 qtcColorFromStr(&color, origin);
+-                assert(color.red == r / 255.0);
+-                assert(color.green == g / 255.0);
+-                assert(color.blue == b / 255.0);
++                float_assert(color.red, r / 255.0);
++                float_assert(color.green, g / 255.0);
++                float_assert(color.blue, b / 255.0);
+                 qtcColorToStr(&color, res);
+                 assert(strcmp(origin, res) == 0);
+             }
