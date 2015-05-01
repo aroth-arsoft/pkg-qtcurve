@@ -1,0 +1,37 @@
+qtcurve (1.8.18-2.1~aroth~ppa3) vivid; urgency=medium
+
+  * drop kwin-dev
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Fri, 01 May 2015 09:36:43 +0200
+
+qtcurve (1.8.18-2.1~aroth~ppa2) vivid; urgency=medium
+
+  * keep empty kwin-style-qtcurve for now
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Fri, 01 May 2015 09:27:42 +0200
+
+qtcurve (1.8.18-2.1~aroth~ppa1) vivid; urgency=medium
+
+  * try to build on vivid
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Thu, 30 Apr 2015 07:42:01 +0200
+
+qtcurve (1.8.18-2~trusty1) trusty; urgency=medium
+
+  * PPA backport
+
+ -- Marián Kadaňka <marian.kadanka@openmailbox.org>  Sun, 01 Feb 2015 09:33:49 +0100
+
+qtcurve (1.8.18-2) experimental; urgency=medium
+
+  * Move Qt5 style into separate package kde-style-qtcurve-qt5.
+  * Package qtcurve now recommends kde-style-qtcurve-qt5.
+  * Update description of package qtcurve.
+
+ -- Boris Pek <tehnick@debian.org>  Tue, 18 Mar 2014 13:49:00 +0400
+
+qtcurve (1.8.18-1) experimental; urgency=medium
+
+  * Initial release.  (Closes: #726767)
+
+ -- Boris Pek <tehnick@debian.org>  Tue, 18 Mar 2014 00:22:08 +0400
